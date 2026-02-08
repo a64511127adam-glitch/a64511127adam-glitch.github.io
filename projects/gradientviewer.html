@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text Gradients</title>
     <style>
         .container {
@@ -10,7 +11,7 @@
 
         .header {
             position: absolute;
-            left: 5%;
+            left: 35;
             font-family: 'Segoe UI';
             color: rgb(230, 230, 230);
             font-size: xx-large;
@@ -18,7 +19,7 @@
 
         .text {
             position: absolute;
-            left: 5%;
+            left: 35;
             font-family: 'Segoe UI';
             color: rgb(230, 230, 230);
             font-size: large;
@@ -26,7 +27,7 @@
 
         .check {
             position: absolute;
-            left: 5%;
+            left: 35;
             font-family: 'Segoe UI';
             color: rgb(231, 231, 231);
             font-weight: bold;
@@ -35,7 +36,7 @@
 
         .buttons {
             position: absolute;
-            left: 5%;
+            left: 35;
             font-family: 'Segoe UI';
             color: rgb(58, 58, 58);
             background-color: #eeeeee; /* "EEEEEE" is very good color */
@@ -47,18 +48,18 @@
 
 <body style="background-color: rgb(24, 24, 24);">
     <p class="header">Gradient applier</p>
-    <p class="text" style="top: 12%">This tool lets you view gradients in HTML without installing any applications.</p>
-        <input type="color" id="color1" style="position: absolute; left: 5%; font-family:'Segoe UI'; top:135;"></input>
-        <input type="color" id="color2" , style="position: absolute; left: 20%; font-family:'Segoe UI'; top:135;"
+    <p class="text" style="top: 75">This tool lets you view gradients in HTML without installing any applications.</p>
+        <input type="color" id="color1" style="position: absolute; left: 35; font-family:'Segoe UI'; top:135;"></input>
+        <input type="color" id="color2" , style="position: absolute; left: 140; font-family:'Segoe UI'; top:135;"
             ,></input>
-    <p class="text" style="top: 19%; left:14%">>></p>
-    <div class="check" style="position: absolute; left: 5%; bottom: 60%; font-family: 'Segoe UI';">
+    <p class="text" style="top: 117; left:100">>></p>
+    <div class="check" style="position: absolute; left: 35; bottom: 390; font-family: 'Segoe UI';">
         <label><input id="boldSetting" type="checkbox"> Bold</label><br>
         <label><input id="italicSetting" type="checkbox"> Italic</label><br>
     </div>
 
     <p class="header" id="gradient" style="
-            top: 21%; background: linear-gradient(90deg, #ff0000, #00ff00);
+            top: 135; background: linear-gradient(90deg, #ff0000, #00ff00);
             -webkit-text-fill-color: transparent; -webkit-background-clip: text">
         Website hackers are very dangerous</p>
     <!-- Scwipt -->
@@ -100,7 +101,7 @@
 
         update();
     </script>
-    <button id="randombutton" class="buttons" style="top: 41%">Pick a random one!</button>
+    <button id="randombutton" class="buttons" style="top: 269">Pick a random one!</button>
     <script>
         const button = document.getElementById("randombutton");
         button.addEventListener("click", () => {
